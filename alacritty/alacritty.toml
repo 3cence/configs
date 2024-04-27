@@ -1,0 +1,10 @@
+
+# Shell
+shell = "/usr/bin/tmux"
+
+# Colors
+window.opacity=0.9
+colors.primary.background="#252a34"
+
+# Mouse
+mouse.hide_when_typing=true
