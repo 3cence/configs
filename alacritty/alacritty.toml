@@ -1,10 +1,11 @@
-
 # Shell
-shell = "/usr/bin/tmux"
+# shell = "/usr/bin/tmux"
+shell = "/bin/fish"
 
 # Colors
-window.opacity=0.9
-colors.primary.background="#252a34"
+window.opacity=0.99
+# colors.primary.background="#252a34"
+import = ["~/.config/alacritty/catppuccin-macchiato.toml"] 
 
 # Mouse
 mouse.hide_when_typing=true
