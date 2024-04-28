@@ -20,6 +20,8 @@ if status is-interactive
   alias psgrep='ps -aux | grep -ia '
   alias grep='grep --color=auto'
 
+  set -U fish_greeting ""
+
   function sudo --description "Implements Bash behavior for 'sudo !!' command."
     if test "$argv" = !!
       eval command sudo $history[1]
