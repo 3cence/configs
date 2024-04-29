@@ -2,10 +2,13 @@
 # shell = { program = "/usr/bin/fish", args = ["tmux attach-session"] }
 # shell = "/bin/fish"
 shell.program = "/bin/fish"
-shell.args = ["--login", "-c", "tmux attach-session"]
+shell.args = ["--login", "-c", "tmux attach-session || tmux"]
+
+# font.normal.family="DejaVuSansMNerdFontMono"
+font.normal.family="FiraCodeNerdFontMono"
 
 # Colors
-window.opacity=0.99
+# window.opacity=0.99
 # colors.primary.background="#252a34"
 import = ["~/.config/alacritty/catppuccin-macchiato.toml"] 
 
