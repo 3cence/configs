@@ -5,6 +5,7 @@ if status is-interactive
   alias mountShared='/home/emma/Scripts/mountShared'
   alias vol='/home/emma/Scripts/setVolume'
   alias vm='/home/emma/Scripts/vm'
+  alias smot='/home/emma/Scripts/Smot'
   alias logout='i3 exit'
   alias lock='echo "Bitch, <mod>+<mod1>+l"'
   alias install='sudo pacman -S'
