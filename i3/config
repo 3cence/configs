@@ -16,7 +16,7 @@ set $wm_setting_key_down             j
 set $wm_setting_key_up               k
 set $wm_setting_key_right            l
 set $wm_setting_app_terminal         alacritty
-set $wm_setting_app_browser          brave
+set $wm_setting_app_browser          firefox
 set $wm_setting_app_launcher         dmenu_run
 
 set $wm_setting_app_compositor       picom
@@ -213,7 +213,8 @@ bindsym $mod+space exec --no-startup-id "nemo"
 bindsym $mod+$smod+m exec "/home/emma/Scripts/locknsleep"
 
 # scrot
-bindsym $mod+$smod+s exec "scrot /home/emma/Images/screenshots/%Y-%m-%d-%T-screenshot.png"
+# bindsym $mod+$smod+s exec "scrot /home/emma/Images/screenshots/%Y-%m-%d-%T-screenshot.png"
+bindsym $mod+$smod+s exec "./home/emma/Scripts/Smot -v >> smotout"
 
 # Startup Login Script
 exec --no-startup-id "/home/emma/Scripts/onStartup"
