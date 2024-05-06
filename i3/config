@@ -215,6 +215,10 @@ bindsym $mod+$smod+m exec "/home/emma/Scripts/locknsleep"
 # scrot
 # bindsym $mod+$smod+s exec "scrot /home/emma/Images/screenshots/%Y-%m-%d-%T-screenshot.png"
 bindsym $mod+$smod+s exec "./home/emma/Scripts/Smot -v >> smotout"
+# bindsym $mod+$smod+s exec "./home/emma/Code/C++/SMOT/build-debug/Smot -v >> smotout"
+
+# Start locker
+exec --no-startup-id "xss-lock -- /usr/lib/kscreenlocker_greet &"
 
 # Startup Login Script
 exec --no-startup-id "/home/emma/Scripts/onStartup"
