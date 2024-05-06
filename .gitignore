@@ -45,3 +45,5 @@ user-dirs.dirs
 user-dirs.locale
 warp-terminal/
 xsettingsd/
+mimeapps.list
+device_automounter_kcmrc
