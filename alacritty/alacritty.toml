@@ -10,7 +10,7 @@ font.normal.family="FiraCodeNerdFontMono"
 # Colors
 # window.opacity=0.99
 # colors.primary.background="#252a34"
-import = ["~/.config/alacritty/catppuccin-macchiato.toml"] 
+import = ["~/.config/alacritty/catppuccin-macchiato.toml", "~/.config/alacritty/keybindings.toml"] 
 
 # Mouse
 mouse.hide_when_typing=true
