@@ -1,5 +1,6 @@
 if status is-interactive
   # Commands to run in interactive sessions can go here
+  alias ard="arduino-cli"
   alias connectHDMI='/home/emma/Scripts/connectHDMI'
   alias mtu='/home/emma/Scripts/manageMtu'
   alias mountShared='/home/emma/Scripts/mountShared'
