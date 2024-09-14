@@ -21,6 +21,7 @@ if status is-interactive
   alias ls='ls --color=auto'
   alias psgrep='ps -aux | grep -ia '
   alias grep='grep --color=auto'
+  alias papercut='/home/emma/mtu-printing/papercut/pc-client-linux.sh'
 
   set -U fish_greeting ""
 
