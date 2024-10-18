@@ -22,6 +22,7 @@ if status is-interactive
   alias psgrep='ps -aux | grep -ia '
   alias grep='grep --color=auto'
   alias papercut='/home/emma/mtu-printing/papercut/pc-client-linux.sh'
+  alias arduino-ide='/home/emma/arduino-ide/arduino-ide_2.3.3_Linux_64bit/arduino-ide'
 
   set -U fish_greeting ""
 
