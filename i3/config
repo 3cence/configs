@@ -16,7 +16,7 @@ set $wm_setting_key_down             j
 set $wm_setting_key_up               k
 set $wm_setting_key_right            l
 set $wm_setting_app_terminal         alacritty
-set $wm_setting_app_browser          firefox
+set $wm_setting_app_browser          brave
 set $wm_setting_app_launcher         dmenu_run
 
 set $wm_setting_app_compositor       picom
@@ -29,7 +29,7 @@ set $wm_color_background             #2E3440
 
 set $bar_setting_position            top
 set $bar_setting_mode                dock
-set $bar_setting_font                pango:Source Sans Pro, Semibold 8
+set $bar_setting_font                pango:Source Sans Pro, Semibold 12
 set $bar_setting_separator           " - "
 set $bar_setting_statusCommand       i3status
 set $bar_setting_trayoutput          full
