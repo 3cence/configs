@@ -1,16 +1,20 @@
-# Shell
-# shell = { program = "/usr/bin/fish", args = ["tmux attach-session"] }
-# shell = "/bin/fish"
-shell.program = "/bin/fish"
-shell.args = ["--login", "-c", "tmux"]
 
 # font.normal.family="DejaVuSansMNerdFontMono"
 font.normal.family="FiraCodeNerdFontMono"
+
+# Mouse
+mouse.hide_when_typing=true
+
+[general]
 
 # Colors
 # window.opacity=0.99
 # colors.primary.background="#252a34"
 import = ["~/.config/alacritty/catppuccin-macchiato.toml", "~/.config/alacritty/keybindings.toml"] 
 
-# Mouse
-mouse.hide_when_typing=true
+[terminal]
+# Shell
+# shell = { program = "/usr/bin/fish", args = ["tmux attach-session"] }
+# shell = "/bin/fish"
+shell.program = "/bin/fish"
+shell.args = ["--login", "-c", "tmux"]
