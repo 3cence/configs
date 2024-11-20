@@ -46,5 +46,5 @@ bgcolor=00000000
 # suspend_command="systemctl suspend" # Manually change action e.g. hibernate/suspend-command
 
 # i3lock-color - custom arguments
-lockargs=(-n --bar-indicator --bar-orientation=vertical --bar-color 30024fff) 						  # overwriting default "(-n)"
+lockargs=(-n --bar-indicator --bar-orientation=vertical --bar-color 30024fff --ignore-empty-password) 						  # overwriting default "(-n)"
 # lockargs+=(--ignore-empty-password) # appending new argument
