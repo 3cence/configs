@@ -10,6 +10,8 @@ set $wm_setting_gap_width            0
 set $wm_setting_gap_heigth           0
 set $wm_setting_gap_inner            5
 
+set $system_locker_cmd               
+
 set $wm_setting_border_size          4
 set $wm_setting_key_left             h
 set $wm_setting_key_down             j
@@ -203,25 +205,27 @@ bindsym $mod+$smod+r restart
 # Exit i3 (logs you out of your X session)
 bindsym $mod+$smod+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# Lock the current session using kscreenlocker
-bindsym $mod+$smod+n exec --no-startup-id "betterlockscreen -l dim"
+# Lock the current session using xss-lock (see startlocker script)
+bindsym $mod+$smod+n exec --no-startup-id "loginctl lock-session"
+bindsym $mod+$smod+m exec "sleep 1; xset dpms force off"
 
 # Open File Explorer (Nemo)
 bindsym $mod+space exec --no-startup-id "nemo"
 
-# Put the computer to sleep after locking
-# bindsym $mod+$smod+m exec "/home/emma/Scripts/locknsleep"
+# Open File Explorer (Nemo)
+bindsym $mod+$smod+d exec --no-startup-id "autorandr --change --force"
 
 # scrot
 # bindsym $mod+$smod+s exec "scrot /home/emma/Images/screenshots/%Y-%m-%d-%T-screenshot.png"
-bindsym $mod+$smod+s exec "./home/emma/Scripts/Smot -v >> smotout"
+# bindsym $mod+$smod+s exec "./home/emma/Scripts/Smot -v >> smotout"
 # bindsym $mod+$smod+s exec "./home/emma/Code/C++/SMOT/build-debug/Smot -v >> smotout"
 
 # Start locker
-# exec --no-startup-id "xss-lock -- /usr/lib/kscreenlocker_greet &"
+exec --no-startup-id "/home/emma/Scripts/startlocker"
 
-# Startup Login Script
+# Startup Login Script 
 exec --no-startup-id "/home/emma/Scripts/onStartup"
 
-# scroll navigation
+# scroll navigation 
 exec --no-startup-id "/usr/bin/xbindkeys"
+
