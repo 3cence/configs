@@ -23,6 +23,7 @@ if status is-interactive
   alias grep='grep --color=auto'
   alias papercut='/home/emma/mtu-printing/papercut/pc-client-linux.sh'
   alias arduino-ide='/home/emma/arduino-ide/arduino-ide_2.3.3_Linux_64bit/arduino-ide'
+  # alias rapidharness='/home/emma/.wine/drive_c/users/emma/AppData/Local/RapidHarness/app-16.0.9/RapidHarness.exe'
 
   set -U fish_greeting ""
 
