@@ -16,6 +16,7 @@ order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
 order += "disk /home"
+order += "cpu_temperature one"
 order += "memory"
 order += "tztime local"
 
@@ -44,6 +45,11 @@ battery all {
 
 disk "/home" {
         format = "DSK: %free"
+}
+
+cpu_temperature one {
+   format = "T: %degrees °C"
+   max_threshold = 90
 }
 
 memory {
